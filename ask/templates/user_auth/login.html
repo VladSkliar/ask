@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{% load i18n %}
+{% load l10n%}
+
+{% block title %}
+{% trans 'Login' %}
+{% endblock %}
+
+{%block banner%}
+  <section id="banner">
+    <h2>{% trans 'Login' %}</h2>
+
+
+  <section class="container">
+    <form action='{% url "login" %}' method='post'>
+      {% csrf_token%}
+      {%if error_msg%}
+        <div class="alert alert-danger" role="alert">
+          {{error_msg}}
+        </div>
+      {%endif%}
+      <div class="row uniform 50%">
+        <div class="6u 12u(mobilep)">
+          <h3>Username or email:</h3>
+          <input type="text" name="username" id="username" value="{{ username|default_if_none:''}}" placeholder="Username or email" />
+        </div>
+        <div class="6u 12u(mobilep)">
+          <h3>Password:</h3>
+          <input type="password" name="password" id="password" value="{{ password|default_if_none:''}}" placeholder="Password" />
+        </div>
+      </div>
+      <br>
+      <input type="submit" value="Login" />
+    </form>
+    <a href="{% url 'register' %}" class="button">Registration</a>
+  </section>
+  </section>
+{%endblock%}
+
+{%block body%}
+
+{%endblock%}
+
+
+{%block pre_footer%}
+{%endblock%}

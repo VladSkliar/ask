@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Answer page
+{%endblock%}
+
+{%block banner%}
+    <section id="banner">
+        <h2>{{ user.username}}</h1>
+    </section>
+{%endblock%}
+
+{%block body%}
+    <section id="main" class="container">
+        <section class="box special features">
+        {% if user.is_authenticated%}
+            {% for q in object_list %}
+                <div class="features-row">
+                    <h2>
+                        {{ q.text}}
+                    </h2>
+                    {%if q.answer%}
+                        <h2>{{q.answer}}</h2>
+                    {%else%}
+                        <a href="{% url 'add_answer' pk=q.id%}" class="button">Add answer</a>
+                    {%endif%}
+                    <p class="post-meta"><small>{{ q.created_at }}</small></p>
+                </div>
+            {% empty %}
+              <h2>You haven`t question</h2>
+            {% endfor %}
+        {%else%}
+            <h1>Login please</h1>
+            <a href="{% url 'login' %}" class="button">Sign In</a>
+        {%endif%}
+        </section>
+    </section>
+{%endblock%}
+
+
+{%block pre_footer%}
+{%endblock%}

@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Add question
+{%endblock%}
+
+{%block banner%}
+<section id="banner">
+    <h2>Add your question</h2>
+</section>
+{%endblock%}
+
+{%block body%}
+  <section id="main" class="container">
+    <section class="box special">
+      <header class="major">
+        <form method="post" action="">
+        {% csrf_token%}
+        <div class="row uniform 50%">
+            <div class="12u">
+             <input type='text' name="text" id="text" value="{{form.text.value|default_if_none:""}}" placeholder="Your answer" />
+            </div>
+          {%if form.text.errors%}
+            <div role="alert">
+              {{form.text.errors}}
+            </div>
+          {%endif%}
+        </div>
+        <br>
+        <input type="submit" value='Add your question' %} />
+        </div>
+      </form >
+      </header>
+    </section>
+  </section>
+
+{%endblock%}
+
+
+{%block pre_footer%}
+{%endblock%}

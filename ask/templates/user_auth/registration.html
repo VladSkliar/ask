@@ -1,0 +1,59 @@
+{%extends 'base.html'%}
+
+{% load i18n %}
+{% load l10n%}
+
+{%block title%}
+{% trans 'Register page' %}
+{%endblock%}
+
+{%block banner%}
+<section id="banner">
+<h2>Register page</h2>
+
+<section class="container">
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="row uniform 100%">
+        <div class="3u 12u(mobilep)">
+        </div>
+        <div class="6u 12u(mobilep)">
+          <h3>Username</h3>
+          <input class="form-control" type="text" name="username" id="username" value='{{form.username.value|default_if_none:''}}'>
+          {%if form.username.errors%}
+            <div class="alert alert-danger" role="alert">
+              {{form.username.errors}}
+            </div>
+          {%endif%}
+          <h3>Password</h3>
+          <input class="form-control" type="password" name="password1" id="password1">
+          {%if form.password1.errors%}
+            <div class="alert alert-danger" role="alert">
+              {{form.password1.errors}}
+            </div>
+          {%endif%}
+          <h3>Repeat Password</h3>
+          <input class="form-control" type="password" name="password2" id="password2">
+          {%if form.password2.errors%}
+            <div class="alert alert-danger" role="alert">
+              {{form.password2.errors}}
+            </div>
+          {%endif%}<br>
+        <input type="submit" value="Registration" />
+        </div>
+
+      </div>
+  </form>
+</section>
+</section>
+{%endblock%}
+
+{%block body%}
+
+{%endblock%}
+
+
+{%block pre_footer%}
+{%endblock%}
+
+

@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Add answer
+{%endblock%}
+
+{%block banner%}
+<section id="banner">
+    <h2>Add your answer!!!</h2>
+</section>
+{%endblock%}
+
+{%block body%}
+  <section id="main" class="container">
+    <section class="box special">
+      <header class="major">
+        <form method="post" action="">
+        {% csrf_token%}
+        <input type='hidden' name="text" id="id_text" value="{{form.text.value|default_if_none:""}}" placeholder="Your answer" />
+        <h2>{{form.text.value}}</h2>
+        <div class="row uniform 50%">
+            <div class="12u">
+             <input type='text'name="answer" id="answer" value="{{form.answer.value|default_if_none:""}}" placeholder="Your answer" />
+            </div>
+          {%if form.answer.errors%}
+            <div role="alert">
+              {{form.answer.errors}}
+            </div>
+          {%endif%}
+        </div>
+        <br>
+        <input type="submit" value='Add your answer' %} />
+        </div>
+      </form >
+      </header>
+    </section>
+  </section>
+
+{%endblock%}
+
+
+{%block pre_footer%}
+{%endblock%}

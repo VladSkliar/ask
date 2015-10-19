@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Home page
+{%endblock%}
+
+{%block banner%}
+    <section id="banner">
+        <h2>Hello!!!</h2>
+        <br>
+        <p>What you would to do?</p>
+        <ul class="actions">
+            <li><a href="{% url 'user_list' %}" class="button special">Ask a question</a></li>
+            <li><a href="{% url 'question_list' %}" class="button">Look for your question</a></li>
+        </ul>
+    </section>
+{%endblock%}
+
+{%block body%}
+{%endblock%}

@@ -1,0 +1,16 @@
+{% load i18n %}
+{% load l10n%}
+
+<header id="header" class="alt">
+    <nav id="nav">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            {% if user.is_authenticated%}
+                <li>{{ user.username}}</li>
+                <li><a href="{% url 'logout' %}" class="button">{% trans 'Logout' %}</a></li>
+            {%else%}
+                <li><a href="{% url 'login' %}" class="button">Sign In</a></li>
+            {%endif%}
+        </ul>
+    </nav>
+</header>

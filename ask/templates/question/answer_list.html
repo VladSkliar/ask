@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+{% load i18n %}
+{% load l10n%}
+
+{%block title%}
+Answer page
+{%endblock%}
+
+{%block banner%}
+    <section id="banner">
+        <h2>{{ user.username}}</h1>
+    </section>
+{%endblock%}
+
+{%block body%}
+    <section id="main" class="container">
+        <section class="box special features">
+
+            {% for q in object_list %}
+                <div class="features-row">
+                    <h2>{{ q.text}}</h2>
+                    <h2>{{ q.answer}}</h2>
+                    <p class="post-meta"><small>{{ q.created_at }}</small></p>
+                </div>
+            {% empty %}
+              <h1>No answers</h1>
+            {% endfor %}
+        <a href="{% url 'add_question' pk=respondent_id %}" class="button">Ask question</a>
+        </section>
+
+    </section>
+{%endblock%}
+
+
+{%block pre_footer%}
+    <section id="cta">
+        <a href="{% url 'question_list' %}" class="button">Look question for me</a>
+    </section>
+{%endblock%}

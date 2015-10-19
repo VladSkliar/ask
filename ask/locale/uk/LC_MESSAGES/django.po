@@ -1,0 +1,496 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-15 12:14+0000\n"
+"PO-Revision-Date: 2015-09-15 12:20+0000\n"
+"Last-Translator:   <vlad@mail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Translated-Using: django-rosetta 0.7.6\n"
+
+#: minisite/apps/info/forms.py:20
+msgid "This first name is too long."
+msgstr "Ім’я занадто довге"
+
+#: minisite/apps/info/forms.py:21
+msgid "Please enter your first name"
+msgstr "Будь ласка, введіть ваше ім’я"
+
+#: minisite/apps/info/forms.py:24 minisite/apps/info/forms.py:32
+msgid "This last name is too long."
+msgstr "Прізвище занадто довге"
+
+#: minisite/apps/info/forms.py:25
+msgid "Please enter your last name"
+msgstr "Будь ласка, введіть ваше прізвище"
+
+#: minisite/apps/info/forms.py:28
+msgid "Please enter your birthdate"
+msgstr "Будь ласка, введіть дату вашого народження"
+
+#: minisite/apps/info/forms.py:29
+msgid "Plese enter correct birthdate"
+msgstr "Будь ласка, введіть корректну дату вашого народження"
+
+#: minisite/apps/info/forms.py:33
+msgid "Please enter your bio"
+msgstr "Будь ласка, введіть вашу біографію"
+
+#: minisite/apps/info/forms.py:40
+#: minisite/templates/registration/registration_form.html:17
+msgid "Username"
+msgstr "Користувач"
+
+#: minisite/apps/info/forms.py:42
+msgid "Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr ""
+"Поле обов’язкове. 30 символів. Тільки букви, цифри та @ / / + / -. / _ ."
+
+#: minisite/apps/info/forms.py:45
+#| msgid "Please enter your last name"
+msgid "Please enter username"
+msgstr "Будь ласка, введіть ваше  ім’я користувача"
+
+#: minisite/apps/info/forms.py:46
+msgid ""
+"This value may contain only english letters, numbers and @/./+/-/_ "
+"characters."
+msgstr ""
+"Це поле може містити тільки англійські букви, цифри та @ / / + / -. / _ "
+"символи."
+
+#: minisite/apps/info/forms.py:57
+#| msgid "User with this email are register"
+msgid "User with that email are register."
+msgstr "Користувач, з такою поштою вже зареєстрований"
+
+#: minisite/apps/info/forms.py:66
+#| msgid "User with this email are register"
+msgid "This email are not register"
+msgstr "Користувач з такою поштою не зареєстрований"
+
+#: minisite/apps/info/views.py:73 minisite/apps/info/views.py:78
+msgid "Provided wrong credentials data"
+msgstr "Надані невірні дані"
+
+#: minisite/apps/info/views.py:144
+msgid "Please authenticate in the site"
+msgstr "Будь ласка авторизуйтесь на сайті"
+
+#: minisite/apps/info/views.py:146
+msgid "User with this email are register"
+msgstr "Користувач вже зареєстрований"
+
+#: minisite/apps/info/views.py:149
+msgid "In this email Invite already sent"
+msgstr "На цю пошту повідомлення вже було надісланно"
+
+#: minisite/apps/info/views.py:162
+msgid "Thank you for invite your friends!!!"
+msgstr "Дякуємо за запрошення для Ваших друзів!"
+
+#: minisite/templates/blog/index.html:6
+msgid "Blog"
+msgstr "Блог"
+
+#: minisite/templates/blog/index.html:10
+msgid "The last posts"
+msgstr "Останні публікації"
+
+#: minisite/templates/blog/index.html:12
+msgid "The last post in our blog"
+msgstr "Останні публікації в нашому блозі"
+
+#: minisite/templates/blog/index.html:23 minisite/templates/blog/post.html:24
+#: minisite/templates/blog/post.html:40
+msgid "Author"
+msgstr "Автор"
+
+#: minisite/templates/blog/index.html:25
+msgid "Blog haven`t post"
+msgstr "Блог немає жодного посту"
+
+#: minisite/templates/blog/post.html:25 minisite/templates/blog/post.html:42
+msgid "Post rating"
+msgstr "Рейтинго посту"
+
+#: minisite/templates/blog/post.html:26 minisite/templates/blog/post.html:44
+msgid "Date published"
+msgstr "Дата публікації"
+
+#: minisite/templates/blog/post.html:30 minisite/templates/blog/post.html:47
+#: minisite/templates/blog/post_update.html:7
+#: minisite/templates/blog/post_update.html:11
+#: minisite/templates/blog/post_update.html:45
+msgid "Update post"
+msgstr "Змінити пост"
+
+#: minisite/templates/blog/post.html:33
+msgid "Deactivate"
+msgstr "Деактивувати"
+
+#: minisite/templates/blog/post.html:50
+msgid "Activate"
+msgstr "Активувати"
+
+#: minisite/templates/blog/post.html:54
+msgid "Sorry, but this post isn`t active"
+msgstr "Вибачте, нажаль цей пост неактивний"
+
+#: minisite/templates/blog/post.html:58
+#| msgid "Post rating"
+msgid "My rating"
+msgstr "Мій рейтинг"
+
+#: minisite/templates/blog/post_creation.html:6
+#: minisite/templates/blog/post_creation.html:10
+#: minisite/templates/blog/post_creation.html:44
+msgid "Create post"
+msgstr "Створити пост"
+
+#: minisite/templates/blog/post_creation.html:17
+#: minisite/templates/blog/post_update.html:18
+msgid "Title"
+msgstr "Назва"
+
+#: minisite/templates/blog/post_creation.html:26
+#: minisite/templates/blog/post_update.html:27
+msgid "Publication date"
+msgstr "Дата публікації"
+
+#: minisite/templates/blog/post_creation.html:35
+#: minisite/templates/blog/post_update.html:36
+msgid "Text of post"
+msgstr "Текст посту"
+
+#: minisite/templates/blog/post_list.html:5
+#: minisite/templates/blog/post_list.html:9
+msgid "My posts"
+msgstr "Мої пости"
+
+#: minisite/templates/blog/post_list.html:20
+msgid "Post is active"
+msgstr "Активний пост"
+
+#: minisite/templates/blog/post_list.html:22
+msgid "Post is deactive"
+msgstr "Неактивний пост"
+
+#: minisite/templates/blog/post_list.html:26
+msgid "You haven`t post"
+msgstr "У Вас немає жодного посту"
+
+#: minisite/templates/blog/post_list.html:29
+msgid "Create your post"
+msgstr "Створити свій пост"
+
+#: minisite/templates/include/invite.html:10
+#: minisite/templates/info/information.html:34
+#: minisite/templates/registration/registration_form.html:26
+msgid "Email"
+msgstr "Пошта"
+
+#: minisite/templates/include/invite.html:15
+msgid "Invite"
+msgstr "Запросити"
+
+#: minisite/templates/include/menu.html:16
+msgid "Change language"
+msgstr "Змінити мову"
+
+#: minisite/templates/include/menu.html:23
+#: minisite/templates/registration/password_reset_confirm.html:15
+msgid "Home"
+msgstr "Домашня сторінка"
+
+#: minisite/templates/include/menu.html:25
+msgid "My Posts"
+msgstr "Мої пости"
+
+#: minisite/templates/include/menu.html:26
+msgid "About me"
+msgstr "Моя інформація"
+
+#: minisite/templates/include/menu.html:27
+msgid "Logout"
+msgstr "Вийти"
+
+#: minisite/templates/include/menu.html:29
+#: minisite/templates/registration/login.html:6
+#: minisite/templates/registration/login.html:10
+#: minisite/templates/registration/login.html:29
+msgid "Login"
+msgstr "Ввійти"
+
+#: minisite/templates/info/create_info.html:7
+#: minisite/templates/info/create_info.html:11
+msgid "Add your information"
+msgstr "Додати вашу інформацію"
+
+#: minisite/templates/info/create_info.html:18
+#: minisite/templates/info/edit.html:21
+#: minisite/templates/info/information.html:30
+msgid "First name"
+msgstr "Ім’я"
+
+#: minisite/templates/info/create_info.html:19
+msgid "Your first name"
+msgstr "Ваше ім’я"
+
+#: minisite/templates/info/create_info.html:27
+#: minisite/templates/info/edit.html:30
+#: minisite/templates/info/information.html:31
+msgid "Last name"
+msgstr "Прізвище"
+
+#: minisite/templates/info/create_info.html:28
+msgid "Your last name"
+msgstr "Ваше прізвище"
+
+#: minisite/templates/info/create_info.html:36
+#: minisite/templates/info/edit.html:39
+#: minisite/templates/info/information.html:32
+msgid "Biography"
+msgstr "Біографія"
+
+#: minisite/templates/info/create_info.html:37
+msgid "Add your biography"
+msgstr "Додати вашу біографію"
+
+#: minisite/templates/info/create_info.html:45
+#: minisite/templates/info/edit.html:48
+#: minisite/templates/info/information.html:22
+msgid "Photo"
+msgstr "Фото"
+
+#: minisite/templates/info/create_info.html:54
+#: minisite/templates/info/edit.html:65
+#: minisite/templates/info/information.html:33
+msgid "Birtdate"
+msgstr "День народження"
+
+#: minisite/templates/info/create_info.html:55
+msgid "Add your other birtdate"
+msgstr "Додайте дату вашого народження"
+
+#: minisite/templates/info/create_info.html:63
+#: minisite/templates/info/edit.html:74
+#: minisite/templates/info/information.html:35
+msgid "Jabber"
+msgstr "Jabber"
+
+#: minisite/templates/info/create_info.html:64
+msgid "Add your Jabber"
+msgstr "Додайте Ваш джабер"
+
+#: minisite/templates/info/create_info.html:72
+#: minisite/templates/info/edit.html:83
+#: minisite/templates/info/information.html:36
+msgid "Skype"
+msgstr "Скайп"
+
+#: minisite/templates/info/create_info.html:73
+msgid "Add your Skype"
+msgstr "Додайте Ваш скайп"
+
+#: minisite/templates/info/create_info.html:81
+#: minisite/templates/info/edit.html:92
+#: minisite/templates/info/information.html:37
+msgid "Ohter contacts"
+msgstr "Інші контакти"
+
+#: minisite/templates/info/create_info.html:82
+msgid "Add your other contacts"
+msgstr "Додайте Ваші  інші контакти"
+
+#: minisite/templates/info/create_info.html:89
+msgid "Add information"
+msgstr "Додати інформацію"
+
+#: minisite/templates/info/edit.html:7 minisite/templates/info/edit.html:14
+#: minisite/templates/info/edit.html:101
+msgid "Update your information"
+msgstr "Змінити Вашу інформацію"
+
+#: minisite/templates/info/information.html:8
+msgid "Information about you"
+msgstr "Ваша інформація"
+
+#: minisite/templates/info/information.html:16
+msgid "Welcome"
+msgstr "Привіт"
+
+#: minisite/templates/info/information.html:16
+msgid "Thanks for loggin"
+msgstr "Дякую за авторизацію"
+
+#: minisite/templates/info/information.html:38
+msgid "Change your information"
+msgstr "Змінити вашу інформацію"
+
+#: minisite/templates/info/information.html:40
+msgid "Please enter your information"
+msgstr "Будь ласка, введіть інформацію про Вас"
+
+#: minisite/templates/info/information.html:41
+msgid "Enter your information"
+msgstr "Ввести Вашу інформацію."
+
+#: minisite/templates/info/latest_request.html:6
+#: minisite/templates/info/latest_request.html:10
+msgid "Latest requests"
+msgstr "Останні запити"
+
+#: minisite/templates/registration/login.html:22
+#| msgid "Username (email)"
+msgid "Username or email"
+msgstr "Ім’я користувача чи пошта"
+
+#: minisite/templates/registration/login.html:26
+#: minisite/templates/registration/registration_form.html:35
+#: minisite/templates/registration/registration_form.html:44
+msgid "Password"
+msgstr "Пароль"
+
+#: minisite/templates/registration/login.html:32
+msgid "Registration"
+msgstr "Реєстрація"
+
+#: minisite/templates/registration/login.html:35
+msgid "Password reset"
+msgstr "Відновлення паролю"
+
+#: minisite/templates/registration/password_reset_complete.html:5
+msgid "Password reset complete"
+msgstr "Зміна паролю заверешена"
+
+#: minisite/templates/registration/password_reset_complete.html:9
+#| msgid "Your password has been set.  You may go ahead and log in now"
+msgid "Your password has been set. You may go ahead and log in now"
+msgstr "Пароль був змінений. Ви можете ввійти використовуючи новий пароль."
+
+#: minisite/templates/registration/password_reset_confirm.html:4
+msgid "Setting New password"
+msgstr "Налаштувати новий пароль"
+
+#: minisite/templates/registration/password_reset_confirm.html:9
+msgid "Please enter your new password twice"
+msgstr "Будь ласка, введіть ваше прізвище"
+
+#: minisite/templates/registration/password_reset_confirm.html:10
+msgid "So we can verify you typed it in correctly"
+msgstr "Таким чином, ми можемо перевірити чи набрали його правильно."
+
+#: minisite/templates/registration/password_reset_confirm.html:12
+msgid "Password reset unsuccessful"
+msgstr "Відновлення паролю невдале"
+
+#: minisite/templates/registration/password_reset_confirm.html:13
+msgid "The password reset link was invalid"
+msgstr "Посилання для відновлення паролю недійсне."
+
+#: minisite/templates/registration/password_reset_confirm.html:14
+msgid "Please request a new password reset"
+msgstr "Будь ласка запросіть нову зміну паролю."
+
+#: minisite/templates/registration/password_reset_confirm.html:24
+msgid "New password"
+msgstr "Новий пароль"
+
+#: minisite/templates/registration/password_reset_confirm.html:28
+msgid "Confirm password"
+msgstr "Підвтердження паролю"
+
+#: minisite/templates/registration/password_reset_confirm.html:31
+msgid "Change my password"
+msgstr "Змінити мій пароль"
+
+#: minisite/templates/registration/password_reset_done.html:7
+msgid "Password reset successful"
+msgstr "Відновлення паролю вдале"
+
+#: minisite/templates/registration/password_reset_done.html:10
+msgid ""
+"We have e-mailed you instructions for setting your password to the e-mail "
+"address you submitted"
+msgstr "Ми відправили Вам інструкцію для зміни паролю"
+
+#: minisite/templates/registration/password_reset_done.html:11
+msgid "You should be receiving it shortly"
+msgstr "Ви повинні отримати його найближчим часом"
+
+#: minisite/templates/registration/password_reset_form.html:4
+msgid "Reset Password"
+msgstr "Змінити пароль"
+
+#: minisite/templates/registration/password_reset_form.html:8
+msgid ""
+"Please specify your email address to receive instructions for resetting it"
+msgstr "Будь ласка, введіть вашу почту, для подальших інструкцій."
+
+#: minisite/templates/registration/password_reset_form.html:17
+msgid "E-mail address"
+msgstr "Почта"
+
+#: minisite/templates/registration/password_reset_form.html:27
+msgid "Reset"
+msgstr "Змінити"
+
+#: minisite/templates/registration/registration_form.html:6
+#: minisite/templates/registration/registration_form.html:10
+msgid "Register page"
+msgstr "Сторінка реєстрації"
+
+#: minisite/templates/registration/registration_form.html:52
+msgid "Register"
+msgstr "Реєстрація"
+
+#~ msgid "Username/password is wrong"
+#~ msgstr "Неправильно введений логін чи пароль"
+
+#~ msgid "This fields are not required"
+#~ msgstr "Ці поля форми заповненні неправильно"
+
+#~ msgid "Image"
+#~ msgstr "Фото"
+
+#~ msgid "User isn`t active or Username/password is wrong"
+#~ msgstr "Користувач не активний або введено неправильні дані"
+
+#~ msgid "Infopage"
+#~ msgstr "Інформаційна сторінка"
+
+#~ msgid "Information"
+#~ msgstr "Інформація"
+
+#~ msgid "User isn`t active"
+#~ msgstr "Цей юзер неактивний"
+
+#~ msgid "Create contacts"
+#~ msgstr "Створити контакт"
+
+#~ msgid "This site in repositories"
+#~ msgstr "Цей сайт в репозиторіях"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Other contacts"
+#~ msgstr "Інші контакти"
+
+#~ msgid "Password confirmed"
+#~ msgstr "Підтвердження паролю"
+
+#~ msgid "All form fields are required"
+#~ msgstr "Всі поля форми заповненні Вірно"
